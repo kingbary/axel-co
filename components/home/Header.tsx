@@ -6,7 +6,7 @@ import { ChevronDown } from "lucide-react";
 export default function Header() {
     return (
         <header className="hero-bg min-h-screen bg-center">
-            <div className="h-screen overflow-hidden">
+            <div className="h-screen pb-8 overflow-hidden">
                 <div className="w-full p-4 flex items-center justify-between sm:px-10 2xl:px-20 md:py-5">
                     <div className="instrument-sans flex items-center gap-16 text-white font-medium text-lg">
                         <Link href={"/"} className="hover:opacity-80">
@@ -32,7 +32,7 @@ export default function Header() {
                     <Button className="hidden lg:block">Get in touch</Button>
                     <button className="lg:hidden"><Image src={"/assets/icons/hamburger.png"} width={24} height={24} alt="hambuger" /> </button>
                 </div>
-                <div className="flex items-center h-full -mt-4">
+                <div className="flex items-center h-full pb-8 -mt-4">
                     <div className="text-white px-4 sm:px-10 2xl:px-20 sm:max-w-[70%] lg:max-w-[60%]">
                         <h1 className="text-[44px] sm:text-6xl lg:text-[80px] tracking-tight leading-[110%] font-normal">Driving Innovation For a Better Future</h1>
                         <p className="instrument-sans sm:max-w-[80%] lg:max-w-[60%] mt-5 2xl:text-xl">At AxelCo, we bring transformation across African industries with AI-driven innovation, tech-enabled solutions, and a commitment to social impact.</p>

@@ -1,8 +1,9 @@
+"use client"
 import Image from "next/image";
 import { Button } from "../ui/button";
 import Link from "next/link";
-import { ChevronDown } from "lucide-react";
 import DropDown from "../commons/DropDown";
+import { motion } from "framer-motion"
 
 export default function Header() {
     return (
@@ -33,13 +34,15 @@ export default function Header() {
                 <button className="lg:hidden"><Image src={"/assets/icons/hamburger.png"} width={24} height={24} alt="hambuger" /> </button>
             </div>
             <div className="flex items-center h-full pb-8 -mt-4">
-                <div className="text-white px-4 sm:px-10 2xl:px-20 sm:max-w-[70%] lg:max-w-[60%]">
+                <motion.div initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 0.4 }} className="text-white px-4 sm:px-10 2xl:px-20 sm:max-w-[70%] lg:max-w-[60%]">
                     <h1 className="text-[44px] sm:text-6xl lg:text-[80px] tracking-tight leading-[110%] font-normal">Driving Innovation For a Better Future</h1>
                     <p className="instrument-sans sm:max-w-[80%] lg:max-w-[60%] mt-5 2xl:text-xl">At AxelCo, we bring transformation across African industries with AI-driven innovation, tech-enabled solutions, and a commitment to social impact.</p>
                     <div className="mt-12">
-                        <Button>Get in touch</Button>
+                        <motion.div initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ ease: "easeIn", duration: 0.7, delay: 0.5 }}>
+                            <Button>Get in touch</Button>
+                        </motion.div>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
     )

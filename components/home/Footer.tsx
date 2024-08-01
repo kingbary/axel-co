@@ -54,7 +54,7 @@ export default function Footer() {
                     <div></div>
                 </div>
             </div >
-            <div className='flex items-center justify-between mt-14 text-sleekWhite/70'>
+            <div className='flex flex-col-reverse md:flex-row md:items-center justify-between gap-4 mt-14 text-sleekWhite/70'>
                 <small className='text-base'>Copyright © 2024 AXEL CO. - All rights reserved.</small>
                 <div className='flex gap-3'>
                     <Link href={"#"}>

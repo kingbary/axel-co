@@ -52,6 +52,8 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        dark: "#101010",
+        sleekWhite: "#E5E4E0",
       },
       fontFamily: {
         instrumentSans: "Instrument sans",
@@ -74,6 +76,10 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      background: {
+        "purple-gradient":
+          "linear-gradient(0deg, rgba(75, 48, 96, 0.5) 0%, rgba(75, 48, 96, 0.5) 100%)",
       },
     },
   },

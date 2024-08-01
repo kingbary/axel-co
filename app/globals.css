@@ -4,13 +4,33 @@
 
 @font-face {
   font-family: "Very Vogue Display";
-  src: url("/public/fonts/very-vogue-display.otf");
+  src: url("/public/fonts/very-vogue-display.ttf");
 }
 @font-face {
   font-family: "Very Vogue Text";
   src: url("/public/fonts/very-vogue-text.otf");
 }
 
+/* @font-face {
+  font-family: "Very Vogue Display";
+  src: url("https://db.onlinewebfonts.com/t/4ee2bbe15227336ee1bab63521193aee.eot");
+  src: url("https://db.onlinewebfonts.com/t/4ee2bbe15227336ee1bab63521193aee.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/4ee2bbe15227336ee1bab63521193aee.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/4ee2bbe15227336ee1bab63521193aee.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/4ee2bbe15227336ee1bab63521193aee.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/4ee2bbe15227336ee1bab63521193aee.svg#Very Vogue Display")
+      format("svg");
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+
+a:hover {
+  opacity: 80;
+}
 .instrument-sans {
   font-family: "Instrument Sans", sans-serif;
 }
@@ -95,5 +115,6 @@
   body {
     @apply bg-background text-foreground;
     font-family: "Very Vogue Display", serif;
+    font-style: normal;
   }
 }

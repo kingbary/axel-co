@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";
+import DropDown from "../commons/DropDown";
 
 export default function Header() {
     return (
@@ -14,7 +15,7 @@ export default function Header() {
                     <div className="hidden lg:block">
                         <ul className="flex gap-[38px]">
                             <li>
-                                <Link href={""} className="flex items-center gap-2">Industries<span><ChevronDown size={18} /></span></Link>
+                                <DropDown />
                             </li>
                             <li>
                                 <Link href={"/capability"} className="flex items-center">Capabilities</Link>

@@ -2,14 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+/* @font-face {
   font-family: "Very Vogue Display";
   src: url("/public/fonts/very-vogue-display.ttf");
-}
+} */
+
 @font-face {
+  font-family: "Very Vogue Display Italic";
+  src: url("/public/fonts/very-vogue-display-italic.otf");
+  font-style: italic;
+}
+
+/* @font-face {
   font-family: "Very Vogue Text";
   src: url("/public/fonts/very-vogue-text.otf");
-}
+} */
 
 /* @font-face {
   font-family: "Very Vogue Display";
@@ -114,7 +121,6 @@ a:hover {
   }
   body {
     @apply bg-background text-foreground;
-    font-family: "Very Vogue Display", serif;
-    font-style: normal;
+    font-family: "Very Vogue Display Italic", serif;
   }
 }
